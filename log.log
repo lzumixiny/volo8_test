@@ -1,0 +1,125 @@
+2025-09-03 20:38:41.000 | INFO     | main:img_object_detection_to_json:149 - 结果: {'detect_objects': [{'name': 'person', 'confidence': 0.7461591363}], 'detect_objects_names': 'person'}
+2025-09-03 20:57:20.256 | INFO     | main:img_object_detection_to_json:149 - 结果: {'detect_objects': [{'name': 'person', 'confidence': 0.7461591363}], 'detect_objects_names': 'person'}
+2025-09-03 21:08:32.874 | INFO     | apps.detech:get_model_predict:115 - 结果: [ultralytics.engine.results.Results object with attributes:
+
+boxes: ultralytics.engine.results.Boxes object
+keypoints: None
+masks: None
+names: {0: 'person', 1: 'bicycle', 2: 'car', 3: 'motorcycle', 4: 'airplane', 5: 'bus', 6: 'train', 7: 'truck', 8: 'boat', 9: 'traffic light', 10: 'fire hydrant', 11: 'stop sign', 12: 'parking meter', 13: 'bench', 14: 'bird', 15: 'cat', 16: 'dog', 17: 'horse', 18: 'sheep', 19: 'cow', 20: 'elephant', 21: 'bear', 22: 'zebra', 23: 'giraffe', 24: 'backpack', 25: 'umbrella', 26: 'handbag', 27: 'tie', 28: 'suitcase', 29: 'frisbee', 30: 'skis', 31: 'snowboard', 32: 'sports ball', 33: 'kite', 34: 'baseball bat', 35: 'baseball glove', 36: 'skateboard', 37: 'surfboard', 38: 'tennis racket', 39: 'bottle', 40: 'wine glass', 41: 'cup', 42: 'fork', 43: 'knife', 44: 'spoon', 45: 'bowl', 46: 'banana', 47: 'apple', 48: 'sandwich', 49: 'orange', 50: 'broccoli', 51: 'carrot', 52: 'hot dog', 53: 'pizza', 54: 'donut', 55: 'cake', 56: 'chair', 57: 'couch', 58: 'potted plant', 59: 'bed', 60: 'dining table', 61: 'toilet', 62: 'tv', 63: 'laptop', 64: 'mouse', 65: 'remote', 66: 'keyboard', 67: 'cell phone', 68: 'microwave', 69: 'oven', 70: 'toaster', 71: 'sink', 72: 'refrigerator', 73: 'book', 74: 'clock', 75: 'vase', 76: 'scissors', 77: 'teddy bear', 78: 'hair drier', 79: 'toothbrush'}
+obb: None
+orig_img: array([[[151, 122, 120],
+        [153, 124, 121],
+        [153, 125, 122],
+        ...,
+        [ 28,  22,  20],
+        [ 28,  22,  20],
+        [ 28,  22,  20]],
+
+       [[165, 138, 135],
+        [172, 145, 142],
+        [167, 140, 137],
+        ...,
+        [ 26,  22,  20],
+        [ 25,  21,  19],
+        [ 25,  21,  19]],
+
+       [[227, 207, 204],
+        [232, 211, 209],
+        [204, 183, 180],
+        ...,
+        [ 25,  21,  19],
+        [ 25,  21,  19],
+        [ 25,  21,  19]],
+
+       ...,
+
+       [[ 94, 120, 156],
+        [ 94, 120, 154],
+        [ 94, 120, 154],
+        ...,
+        [ 41,  48,  66],
+        [ 39,  48,  66],
+        [ 37,  47,  64]],
+
+       [[ 94, 119, 154],
+        [ 94, 119, 153],
+        [ 94, 119, 153],
+        ...,
+        [ 41,  48,  66],
+        [ 38,  48,  65],
+        [ 37,  47,  64]],
+
+       [[ 94, 118, 152],
+        [ 94, 118, 152],
+        [ 94, 118, 152],
+        ...,
+        [ 40,  48,  65],
+        [ 38,  47,  64],
+        [ 37,  47,  64]]], shape=(387, 554, 3), dtype=uint8)
+orig_shape: (387, 554)
+path: 'image0.jpg'
+probs: None
+save_dir: '/home/lzumi/allCode/python/lock_det/runs/detect/predict'
+speed: {'preprocess': 5.511843000022054, 'inference': 79.1219689999707, 'postprocess': 352.6276359998519}]
+2025-09-03 21:08:32.880 | INFO     | main:img_object_detection_to_json:149 - 结果: {'detect_objects': [{'name': 'person', 'confidence': 0.7461591363}], 'detect_objects_names': 'person'}
+2025-09-03 21:09:32.092 | INFO     | apps.detech:get_model_predict:115 - 结果: [ultralytics.engine.results.Results object with attributes:
+
+boxes: ultralytics.engine.results.Boxes object
+keypoints: None
+masks: None
+names: {0: 'person', 1: 'bicycle', 2: 'car', 3: 'motorcycle', 4: 'airplane', 5: 'bus', 6: 'train', 7: 'truck', 8: 'boat', 9: 'traffic light', 10: 'fire hydrant', 11: 'stop sign', 12: 'parking meter', 13: 'bench', 14: 'bird', 15: 'cat', 16: 'dog', 17: 'horse', 18: 'sheep', 19: 'cow', 20: 'elephant', 21: 'bear', 22: 'zebra', 23: 'giraffe', 24: 'backpack', 25: 'umbrella', 26: 'handbag', 27: 'tie', 28: 'suitcase', 29: 'frisbee', 30: 'skis', 31: 'snowboard', 32: 'sports ball', 33: 'kite', 34: 'baseball bat', 35: 'baseball glove', 36: 'skateboard', 37: 'surfboard', 38: 'tennis racket', 39: 'bottle', 40: 'wine glass', 41: 'cup', 42: 'fork', 43: 'knife', 44: 'spoon', 45: 'bowl', 46: 'banana', 47: 'apple', 48: 'sandwich', 49: 'orange', 50: 'broccoli', 51: 'carrot', 52: 'hot dog', 53: 'pizza', 54: 'donut', 55: 'cake', 56: 'chair', 57: 'couch', 58: 'potted plant', 59: 'bed', 60: 'dining table', 61: 'toilet', 62: 'tv', 63: 'laptop', 64: 'mouse', 65: 'remote', 66: 'keyboard', 67: 'cell phone', 68: 'microwave', 69: 'oven', 70: 'toaster', 71: 'sink', 72: 'refrigerator', 73: 'book', 74: 'clock', 75: 'vase', 76: 'scissors', 77: 'teddy bear', 78: 'hair drier', 79: 'toothbrush'}
+obb: None
+orig_img: array([[[255, 236, 139],
+        [255, 237, 140],
+        [255, 237, 140],
+        ...,
+        [255, 237, 139],
+        [255, 235, 138],
+        [255, 237, 138]],
+
+       [[255, 240, 157],
+        [255, 239, 156],
+        [255, 239, 155],
+        ...,
+        [255, 239, 155],
+        [255, 238, 145],
+        [255, 236, 138]],
+
+       [[255, 238, 153],
+        [255, 238, 150],
+        [255, 238, 152],
+        ...,
+        [255, 239, 155],
+        [255, 237, 144],
+        [255, 236, 138]],
+
+       ...,
+
+       [[255, 254, 248],
+        [255, 255, 249],
+        [255, 255, 249],
+        ...,
+        [255, 255, 249],
+        [255, 254, 247],
+        [255, 255, 248]],
+
+       [[255, 255, 248],
+        [255, 255, 248],
+        [255, 255, 249],
+        ...,
+        [255, 254, 249],
+        [255, 255, 247],
+        [255, 255, 248]],
+
+       [[255, 255, 249],
+        [255, 255, 249],
+        [255, 255, 250],
+        ...,
+        [255, 254, 250],
+        [255, 255, 248],
+        [255, 255, 247]]], shape=(1879, 1090, 3), dtype=uint8)
+orig_shape: (1879, 1090)
+path: 'image0.jpg'
+probs: None
+save_dir: '/home/lzumi/allCode/python/lock_det/runs/detect/predict'
+speed: {'preprocess': 3.275038000083441, 'inference': 72.86513899998681, 'postprocess': 20.066787999894586}]
