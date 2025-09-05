@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能锁检测系统</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-lock"></i>
+                <h1>智能锁检测系统</h1>
+            </div>
+            <div class="status-indicator" id="systemStatus">
+                <i class="fas fa-circle"></i>
+                <span>系统状态</span>
+            </div>
+        </header>
+
+        <!-- 主要内容区域 -->
+        <main class="main-content">
+            <!-- 检测区域 -->
+            <section class="detection-section">
+                <h2><i class="fas fa-camera"></i> 锁状态检测</h2>
+                
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h3>点击或拖拽上传图片</h3>
+                        <p>支持 JPG、PNG 格式</p>
+                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                        <button class="btn btn-primary" id="selectFileBtn">
+                            选择图片
+                        </button>
+                    </div>
+                </div>
+
+                <div class="image-preview" id="imagePreview" style="display: none;">
+                    <div class="preview-container">
+                        <img id="previewImage" src="" alt="预览图片">
+                        <div class="preview-actions">
+                            <button class="btn btn-success" onclick="detectLocks()">
+                                <i class="fas fa-search"></i> 开始检测
+                            </button>
+                            <button class="btn btn-secondary" onclick="clearImage()">
+                                <i class="fas fa-trash"></i> 清除
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 检测结果 -->
+                <div class="result-section" id="resultSection" style="display: none;">
+                    <h3><i class="fas fa-chart-bar"></i> 检测结果</h3>
+                    
+                    <div class="result-content">
+                        <div class="result-image">
+                            <img id="resultImage" src="" alt="检测结果">
+                        </div>
+                        
+                        <div class="result-details">
+                            <div class="detail-card">
+                                <h4>基本信息</h4>
+                                <div class="detail-item">
+                                    <span class="label">检测ID:</span>
+                                    <span class="value" id="detectionId">-</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">检测时间:</span>
+                                    <span class="value" id="detectionTime">-</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">置信度:</span>
+                                    <span class="value" id="confidence">-</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-card">
+                                <h4>锁状态分析</h4>
+                                <div class="status-overview" id="statusOverview">
+                                    <div class="status-item">
+                                        <i class="fas fa-lock"></i>
+                                        <div class="status-number" id="totalLocks">0</div>
+                                        <div class="status-label">总锁数</div>
+                                    </div>
+                                    <div class="status-item">
+                                        <i class="fas fa-lock-open"></i>
+                                        <div class="status-number" id="unlockedLocks">0</div>
+                                        <div class="status-label">未锁定</div>
+                                    </div>
+                                    <div class="status-item">
+                                        <i class="fas fa-lock"></i>
+                                        <div class="status-number" id="lockedLocks">0</div>
+                                        <div class="status-label">已锁定</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="safety-status" id="safetyStatus">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span id="safetyText">安全状态</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-card">
+                                <h4>详细信息</h4>
+                                <div id="lockDetails"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 统计信息区域 -->
+            <section class="stats-section">
+                <h2><i class="fas fa-chart-line"></i> 系统统计</h2>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" id="totalDetections">-</div>
+                            <div class="stat-label">总检测次数</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" id="unlockedCount">-</div>
+                            <div class="stat-label">未锁定次数</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" id="safeCount">-</div>
+                            <div class="stat-label">安全次数</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-images"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number" id="datasetSize">-</div>
+                            <div class="stat-label">数据集大小</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="refresh-btn">
+                    <button class="btn btn-primary" onclick="refreshStats()">
+                        <i class="fas fa-sync-alt"></i> 刷新统计
+                    </button>
+                </div>
+            </section>
+
+            <!-- 检测历史区域 -->
+            <section class="history-section">
+                <h2><i class="fas fa-history"></i> 检测历史</h2>
+                
+                <div class="history-controls">
+                    <div class="control-group">
+                        <label for="limitSelect">显示数量:</label>
+                        <select id="limitSelect" onchange="loadHistory()">
+                            <option value="5">5条</option>
+                            <option value="10" selected>10条</option>
+                            <option value="20">20条</option>
+                            <option value="50">50条</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" onclick="loadHistory()">
+                        <i class="fas fa-refresh"></i> 刷新
+                    </button>
+                </div>
+                
+                <div class="history-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>检测ID</th>
+                                <th>检测时间</th>
+                                <th>锁数量</th>
+                                <th>未锁定</th>
+                                <th>安全状态</th>
+                                <th>置信度</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyTableBody">
+                            <tr>
+                                <td colspan="6" class="loading">加载中...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 智能锁检测系统. 基于 YOLOv8 和 FastAPI 构建.</p>
+                <div class="footer-links">
+                    <a href="#" onclick="showApiDocs()"><i class="fas fa-book"></i> API文档</a>
+                    <a href="#" onclick="showAbout()"><i class="fas fa-info-circle"></i> 关于</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 加载指示器 -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>处理中...</p>
+        </div>
+    </div>
+
+    <!-- 脚本 -->
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script>
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeApp();
+        });
+    </script>
+</body>
+</html>

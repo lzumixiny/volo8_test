@@ -1,0 +1,8 @@
+names:
+  0: locked
+  1: unlocked
+nc: 2
+path: /home/lzumi/allCode/python/lock_det/datasets/lock_detech
+test: test
+train: train
+val: val

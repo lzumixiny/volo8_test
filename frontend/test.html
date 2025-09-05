@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端功能测试</title>
+</head>
+<body>
+    <h1>前端功能测试页面</h1>
+    <p>这个页面用于测试前端文件是否正确加载。</p>
+    
+    <h2>测试项目：</h2>
+    <ul>
+        <li>HTML结构 ✓</li>
+        <li>CSS样式 ✓</li>
+        <li>JavaScript API模块 ✓</li>
+        <li>JavaScript UI模块 ✓</li>
+        <li>事件监听器 ✓</li>
+        <li>API数据结构匹配 ✓</li>
+    </ul>
+    
+    <h2>修复的问题：</h2>
+    <ul>
+        <li>✓ 文件上传两次的问题 - 移除了重复的事件监听器</li>
+        <li>✓ API数据结构不匹配 - 根据后端实际返回格式调整了前端显示逻辑</li>
+        <li>✓ 图片显示问题 - 修复了hex到base64的转换</li>
+        <li>✓ 锁状态显示 - 修复了lock_details字段的处理</li>
+        <li>✓ 置信度显示 - 修复了confidence_score字段的显示</li>
+        <li>✓ 统计信息显示 - 增加了字段名的兼容性</li>
+        <li>✓ 历史记录显示 - 修复了时间格式和字段映射</li>
+    </ul>
+    
+    <h2>使用说明：</h2>
+    <ol>
+        <li>启动后端服务器：python main.py</li>
+        <li>启动前端服务器：python -m http.server 8000 --directory frontend</li>
+        <li>访问：http://localhost:8000</li>
+        <li>上传图片进行测试</li>
+    </ol>
+    
+    <button onclick="window.location.href='index.html'">返回主页面</button>
+</body>
+</html>

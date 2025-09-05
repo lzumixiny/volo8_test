@@ -1,125 +1,116 @@
-2025-09-03 20:38:41.000 | INFO     | main:img_object_detection_to_json:149 - 结果: {'detect_objects': [{'name': 'person', 'confidence': 0.7461591363}], 'detect_objects_names': 'person'}
-2025-09-03 20:57:20.256 | INFO     | main:img_object_detection_to_json:149 - 结果: {'detect_objects': [{'name': 'person', 'confidence': 0.7461591363}], 'detect_objects_names': 'person'}
-2025-09-03 21:08:32.874 | INFO     | apps.detech:get_model_predict:115 - 结果: [ultralytics.engine.results.Results object with attributes:
+2025-09-05 20:53:09.800 | WARNING  | apps.lock_detector:load_model:88 - 模型文件不存在: models/lock_detector/best.pt，使用默认模型
+2025-09-05 20:53:09.837 | INFO     | apps.trainer:_create_dataset_config:55 - 数据集配置文件已创建: dataset/dataset.yaml
+2025-09-05 20:53:09.852 | WARNING  | main:startup_event:80 - 未配置钉钉服务，部分功能将不可用
+2025-09-05 20:53:12.307 | INFO     | apps.trainer:train_model:180 - 开始训练模型: lock_detector
+2025-09-05 20:53:12.849 | ERROR    | apps.trainer:train_model:245 - 模型训练失败: Invalid CUDA 'device=auto' requested. Use 'device=cpu' or pass valid CUDA device(s) if available, i.e. 'device=0' or 'device=0,1,2,3' for Multi-GPU.
 
-boxes: ultralytics.engine.results.Boxes object
-keypoints: None
-masks: None
-names: {0: 'person', 1: 'bicycle', 2: 'car', 3: 'motorcycle', 4: 'airplane', 5: 'bus', 6: 'train', 7: 'truck', 8: 'boat', 9: 'traffic light', 10: 'fire hydrant', 11: 'stop sign', 12: 'parking meter', 13: 'bench', 14: 'bird', 15: 'cat', 16: 'dog', 17: 'horse', 18: 'sheep', 19: 'cow', 20: 'elephant', 21: 'bear', 22: 'zebra', 23: 'giraffe', 24: 'backpack', 25: 'umbrella', 26: 'handbag', 27: 'tie', 28: 'suitcase', 29: 'frisbee', 30: 'skis', 31: 'snowboard', 32: 'sports ball', 33: 'kite', 34: 'baseball bat', 35: 'baseball glove', 36: 'skateboard', 37: 'surfboard', 38: 'tennis racket', 39: 'bottle', 40: 'wine glass', 41: 'cup', 42: 'fork', 43: 'knife', 44: 'spoon', 45: 'bowl', 46: 'banana', 47: 'apple', 48: 'sandwich', 49: 'orange', 50: 'broccoli', 51: 'carrot', 52: 'hot dog', 53: 'pizza', 54: 'donut', 55: 'cake', 56: 'chair', 57: 'couch', 58: 'potted plant', 59: 'bed', 60: 'dining table', 61: 'toilet', 62: 'tv', 63: 'laptop', 64: 'mouse', 65: 'remote', 66: 'keyboard', 67: 'cell phone', 68: 'microwave', 69: 'oven', 70: 'toaster', 71: 'sink', 72: 'refrigerator', 73: 'book', 74: 'clock', 75: 'vase', 76: 'scissors', 77: 'teddy bear', 78: 'hair drier', 79: 'toothbrush'}
-obb: None
-orig_img: array([[[151, 122, 120],
-        [153, 124, 121],
-        [153, 125, 122],
-        ...,
-        [ 28,  22,  20],
-        [ 28,  22,  20],
-        [ 28,  22,  20]],
+torch.cuda.is_available(): False
+torch.cuda.device_count(): 0
+os.environ['CUDA_VISIBLE_DEVICES']: None
+See https://pytorch.org/get-started/locally/ for up-to-date torch install instructions if no CUDA devices are seen by torch.
 
-       [[165, 138, 135],
-        [172, 145, 142],
-        [167, 140, 137],
-        ...,
-        [ 26,  22,  20],
-        [ 25,  21,  19],
-        [ 25,  21,  19]],
-
-       [[227, 207, 204],
-        [232, 211, 209],
-        [204, 183, 180],
-        ...,
-        [ 25,  21,  19],
-        [ 25,  21,  19],
-        [ 25,  21,  19]],
-
-       ...,
-
-       [[ 94, 120, 156],
-        [ 94, 120, 154],
-        [ 94, 120, 154],
-        ...,
-        [ 41,  48,  66],
-        [ 39,  48,  66],
-        [ 37,  47,  64]],
-
-       [[ 94, 119, 154],
-        [ 94, 119, 153],
-        [ 94, 119, 153],
-        ...,
-        [ 41,  48,  66],
-        [ 38,  48,  65],
-        [ 37,  47,  64]],
-
-       [[ 94, 118, 152],
-        [ 94, 118, 152],
-        [ 94, 118, 152],
-        ...,
-        [ 40,  48,  65],
-        [ 38,  47,  64],
-        [ 37,  47,  64]]], shape=(387, 554, 3), dtype=uint8)
-orig_shape: (387, 554)
-path: 'image0.jpg'
-probs: None
-save_dir: '/home/lzumi/allCode/python/lock_det/runs/detect/predict'
-speed: {'preprocess': 5.511843000022054, 'inference': 79.1219689999707, 'postprocess': 352.6276359998519}]
-2025-09-03 21:08:32.880 | INFO     | main:img_object_detection_to_json:149 - 结果: {'detect_objects': [{'name': 'person', 'confidence': 0.7461591363}], 'detect_objects_names': 'person'}
-2025-09-03 21:09:32.092 | INFO     | apps.detech:get_model_predict:115 - 结果: [ultralytics.engine.results.Results object with attributes:
-
-boxes: ultralytics.engine.results.Boxes object
-keypoints: None
-masks: None
-names: {0: 'person', 1: 'bicycle', 2: 'car', 3: 'motorcycle', 4: 'airplane', 5: 'bus', 6: 'train', 7: 'truck', 8: 'boat', 9: 'traffic light', 10: 'fire hydrant', 11: 'stop sign', 12: 'parking meter', 13: 'bench', 14: 'bird', 15: 'cat', 16: 'dog', 17: 'horse', 18: 'sheep', 19: 'cow', 20: 'elephant', 21: 'bear', 22: 'zebra', 23: 'giraffe', 24: 'backpack', 25: 'umbrella', 26: 'handbag', 27: 'tie', 28: 'suitcase', 29: 'frisbee', 30: 'skis', 31: 'snowboard', 32: 'sports ball', 33: 'kite', 34: 'baseball bat', 35: 'baseball glove', 36: 'skateboard', 37: 'surfboard', 38: 'tennis racket', 39: 'bottle', 40: 'wine glass', 41: 'cup', 42: 'fork', 43: 'knife', 44: 'spoon', 45: 'bowl', 46: 'banana', 47: 'apple', 48: 'sandwich', 49: 'orange', 50: 'broccoli', 51: 'carrot', 52: 'hot dog', 53: 'pizza', 54: 'donut', 55: 'cake', 56: 'chair', 57: 'couch', 58: 'potted plant', 59: 'bed', 60: 'dining table', 61: 'toilet', 62: 'tv', 63: 'laptop', 64: 'mouse', 65: 'remote', 66: 'keyboard', 67: 'cell phone', 68: 'microwave', 69: 'oven', 70: 'toaster', 71: 'sink', 72: 'refrigerator', 73: 'book', 74: 'clock', 75: 'vase', 76: 'scissors', 77: 'teddy bear', 78: 'hair drier', 79: 'toothbrush'}
-obb: None
-orig_img: array([[[255, 236, 139],
-        [255, 237, 140],
-        [255, 237, 140],
-        ...,
-        [255, 237, 139],
-        [255, 235, 138],
-        [255, 237, 138]],
-
-       [[255, 240, 157],
-        [255, 239, 156],
-        [255, 239, 155],
-        ...,
-        [255, 239, 155],
-        [255, 238, 145],
-        [255, 236, 138]],
-
-       [[255, 238, 153],
-        [255, 238, 150],
-        [255, 238, 152],
-        ...,
-        [255, 239, 155],
-        [255, 237, 144],
-        [255, 236, 138]],
-
-       ...,
-
-       [[255, 254, 248],
-        [255, 255, 249],
-        [255, 255, 249],
-        ...,
-        [255, 255, 249],
-        [255, 254, 247],
-        [255, 255, 248]],
-
-       [[255, 255, 248],
-        [255, 255, 248],
-        [255, 255, 249],
-        ...,
-        [255, 254, 249],
-        [255, 255, 247],
-        [255, 255, 248]],
-
-       [[255, 255, 249],
-        [255, 255, 249],
-        [255, 255, 250],
-        ...,
-        [255, 254, 250],
-        [255, 255, 248],
-        [255, 255, 247]]], shape=(1879, 1090, 3), dtype=uint8)
-orig_shape: (1879, 1090)
-path: 'image0.jpg'
-probs: None
-save_dir: '/home/lzumi/allCode/python/lock_det/runs/detect/predict'
-speed: {'preprocess': 3.275038000083441, 'inference': 72.86513899998681, 'postprocess': 20.066787999894586}]
+2025-09-05 20:53:49.239 | WARNING  | apps.lock_detector:load_model:88 - 模型文件不存在: models/lock_detector/best.pt，使用默认模型
+2025-09-05 20:53:49.276 | INFO     | apps.trainer:_create_dataset_config:55 - 数据集配置文件已创建: dataset/dataset.yaml
+2025-09-05 20:53:49.290 | WARNING  | main:startup_event:80 - 未配置钉钉服务，部分功能将不可用
+2025-09-05 20:53:56.255 | INFO     | apps.trainer:train_model:180 - 开始训练模型: lock_detector
+2025-09-05 20:53:56.875 | ERROR    | apps.trainer:train_model:245 - 模型训练失败: Dataset 'dataset/lock_detech.yaml' error ❌ 'dataset/lock_detech.yaml' does not exist
+2025-09-05 20:55:55.211 | INFO     | apps.trainer:train_model:180 - 开始训练模型: lock_detector
+2025-09-05 20:55:55.470 | ERROR    | apps.trainer:train_model:245 - 模型训练失败: Dataset 'dataset/lock_detech.yaml' error ❌ 'dataset/lock_detech.yaml' does not exist
+2025-09-05 21:31:57.472 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-05 21:31:57.472 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-05 21:31:57.473 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-05 21:32:10.617 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-05 21:32:10.617 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-05 21:32:10.617 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-05 21:32:10.706 | ERROR    | apps.detech:get_image_from_bytes:31 - 图像转换失败: embedded null byte
+2025-09-05 21:32:10.706 | ERROR    | main:detect_locks:259 - 锁检测失败: 无法解析图像文件: embedded null byte
+2025-09-05 21:32:19.558 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-05 21:32:19.558 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-05 21:32:19.558 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-05 21:32:19.581 | ERROR    | apps.detech:get_image_from_bytes:31 - 图像转换失败: embedded null byte
+2025-09-05 21:32:19.581 | ERROR    | main:detect_locks:259 - 锁检测失败: 无法解析图像文件: embedded null byte
+2025-09-05 21:32:54.816 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-05 21:32:54.816 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-05 21:32:54.816 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-05 21:32:55.684 | INFO     | apps.lock_detector:detect_locks:130 - 锁分类结果: 1 个锁, 1 个未锁定
+2025-09-05 21:32:55.692 | INFO     | apps.lock_detector:save_detection_result:188 - 检测结果已保存到数据库: 2
+2025-09-05 21:32:55.710 | ERROR    | main:detect_locks:259 - 锁检测失败: 'bytes' object has no attribute 'getvalue'
+2025-09-05 21:33:07.798 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-05 21:33:07.799 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-05 21:33:07.799 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-05 21:33:08.646 | INFO     | apps.lock_detector:detect_locks:130 - 锁分类结果: 1 个锁, 1 个未锁定
+2025-09-05 21:33:08.653 | INFO     | apps.lock_detector:save_detection_result:188 - 检测结果已保存到数据库: 3
+2025-09-05 21:33:42.190 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-05 21:33:42.190 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-05 21:33:42.191 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-05 21:33:43.036 | INFO     | apps.lock_detector:detect_locks:130 - 锁分类结果: 1 个锁, 1 个未锁定
+2025-09-05 21:33:43.043 | INFO     | apps.lock_detector:save_detection_result:188 - 检测结果已保存到数据库: 4
+2025-09-05 21:33:43.097 | INFO     | apps.lock_detector:detect_locks:130 - 锁分类结果: 1 个锁, 1 个未锁定
+2025-09-05 21:33:43.104 | INFO     | apps.lock_detector:save_detection_result:188 - 检测结果已保存到数据库: 5
+2025-09-05 21:34:00.236 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-05 21:34:00.236 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-05 21:34:00.236 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-05 21:34:01.059 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 0 个未锁定
+2025-09-05 21:34:01.067 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 6
+2025-09-05 21:34:01.120 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 1 个未锁定
+2025-09-05 21:34:01.127 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 7
+2025-09-05 21:34:20.421 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-05 21:34:20.421 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-05 21:34:20.421 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-05 21:34:20.423 | WARNING  | main:startup_event:76 - 未配置钉钉服务，部分功能将不可用
+2025-09-05 21:34:55.004 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 0 个未锁定
+2025-09-05 21:34:55.012 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 8
+2025-09-05 21:35:12.885 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 1 个未锁定
+2025-09-05 21:35:12.892 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 9
+2025-09-05 21:35:34.344 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 1 个未锁定
+2025-09-05 21:35:34.351 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 10
+2025-09-05 21:35:42.498 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 1 个未锁定
+2025-09-05 21:35:42.505 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 11
+2025-09-05 21:43:43.925 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-05 21:43:43.926 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-05 21:43:43.926 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-05 21:43:43.928 | WARNING  | main:startup_event:76 - 未配置钉钉服务，部分功能将不可用
+2025-09-05 21:43:56.677 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-05 21:43:56.678 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-05 21:43:56.678 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-05 21:43:56.680 | WARNING  | main:startup_event:76 - 未配置钉钉服务，部分功能将不可用
+2025-09-05 21:45:09.342 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-05 21:45:09.343 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-05 21:45:09.343 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-05 21:45:09.345 | WARNING  | main:startup_event:76 - 未配置钉钉服务，部分功能将不可用
+2025-09-05 21:46:44.025 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-05 21:46:44.026 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-05 21:46:44.026 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-05 21:46:44.028 | WARNING  | main:startup_event:76 - 未配置钉钉服务，部分功能将不可用
+2025-09-05 21:46:58.323 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 1 个未锁定
+2025-09-05 21:46:58.332 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 12
+2025-09-05 21:47:24.035 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 1 个未锁定
+2025-09-05 21:47:24.043 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 13
+2025-09-05 21:49:05.980 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 1 个未锁定
+2025-09-05 21:49:05.987 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 14
+2025-09-05 21:51:27.203 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-05 21:51:27.203 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-05 21:51:27.203 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-05 21:51:27.206 | WARNING  | main:startup_event:76 - 未配置钉钉服务，部分功能将不可用
+2025-09-05 21:51:41.811 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 1 个未锁定
+2025-09-05 21:51:41.822 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 15
+2025-09-05 21:51:56.354 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 1 个未锁定
+2025-09-05 21:51:56.362 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 16
+2025-09-05 21:52:07.906 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 0 个未锁定
+2025-09-05 21:52:07.913 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 17
+2025-09-05 21:52:24.224 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 0 个未锁定
+2025-09-05 21:52:24.230 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 18
+2025-09-05 21:52:42.721 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 0 个未锁定
+2025-09-05 21:52:42.729 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 19
+2025-09-05 21:55:13.129 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 0 个未锁定
+2025-09-05 21:55:13.140 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 20
+2025-09-05 21:56:02.343 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 1 个未锁定
+2025-09-05 21:56:02.351 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 21
+2025-09-05 21:57:15.174 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 0 个未锁定
+2025-09-05 21:57:15.184 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 22
+2025-09-05 21:57:28.043 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 0 个未锁定
+2025-09-05 21:57:28.051 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 23
+2025-09-05 21:58:18.465 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 1 个未锁定
+2025-09-05 21:58:18.484 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 24
+2025-09-05 21:58:54.758 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 0 个未锁定
+2025-09-05 21:58:54.788 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 25
