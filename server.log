@@ -1,0 +1,182 @@
+2025-09-21 17:11:46.088 | INFO     | apps.lock_detector:load_model:85 - 目标检测模型加载成功: models/lock_detector/weights/best.pt
+2025-09-21 17:11:46.090 | INFO     | apps.trainer:_create_dataset_config:62 - YOLO数据集配置文件已创建: datasets/lock_dataset_new/dataset.yaml
+/home/lzumi/allCode/python/lock_det/main.py:66: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+[32m17:11:46[0m | [1m已注册命令: train[0m
+[32m17:11:46[0m | [1m已注册命令: dataset_stats[0m
+[32m17:11:46[0m | [1m已注册命令: export_model[0m
+INFO:     Will watch for changes in these directories: ['/home/lzumi/allCode/python/lock_det']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [1650916] using StatReload
+2025-09-21 17:11:48.457 | INFO     | apps.lock_detector:load_model:85 - 目标检测模型加载成功: models/lock_detector/weights/best.pt
+2025-09-21 17:11:48.459 | INFO     | apps.trainer:_create_dataset_config:62 - YOLO数据集配置文件已创建: datasets/lock_dataset_new/dataset.yaml
+[32m17:11:48[0m | [1m已注册命令: train[0m
+[32m17:11:48[0m | [1m已注册命令: dataset_stats[0m
+[32m17:11:48[0m | [1m已注册命令: export_model[0m
+[32m17:11:48[0m | [1m已注册命令: train[0m
+[32m17:11:48[0m | [1m已注册命令: dataset_stats[0m
+[32m17:11:48[0m | [1m已注册命令: export_model[0m
+INFO:     Started server process [1651595]
+INFO:     Waiting for application startup.
+[32m17:11:48[0m | [33m[1m未配置钉钉服务，部分功能将不可用[0m
+INFO:     Application startup complete.
+INFO:     127.0.0.1:52932 - "GET /healthcheck HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52948 - "GET /healthcheck HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52960 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52976 - "GET /api/v1/stats HTTP/1.1" 200 OK
+[32m17:11:53[0m | [1m锁检测结果: 1 个锁, 0 个未锁定[0m
+[32m17:11:53[0m | [1m检测结果已保存到数据库: 36[0m
+INFO:     127.0.0.1:52990 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52992 - "HEAD /static/index.html HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52996 - "HEAD /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:2630 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:2630 - "GET /static/index.html HTTP/1.1" 200 OK
+INFO:     127.0.0.1:2630 - "GET /static/css/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:5735 - "GET /static/js/api.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:2630 - "GET /static/js/ui.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:2630 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:2630 - "GET /api/v1/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:2630 - "GET /api/v1/history?limit=10&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:2630 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+[32m17:14:28[0m | [1m锁检测结果: 0 个锁, 0 个未锁定[0m
+[32m17:14:28[0m | [1m检测结果已保存到数据库: 37[0m
+INFO:     127.0.0.1:3676 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+[32m17:14:53[0m | [1m锁检测结果: 0 个锁, 0 个未锁定[0m
+[32m17:14:53[0m | [1m检测结果已保存到数据库: 38[0m
+INFO:     127.0.0.1:11168 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+[32m17:15:09[0m | [1m锁检测结果: 1 个锁, 0 个未锁定[0m
+[32m17:15:09[0m | [1m检测结果已保存到数据库: 39[0m
+INFO:     127.0.0.1:12452 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+[32m17:15:26[0m | [1m锁检测结果: 0 个锁, 0 个未锁定[0m
+[32m17:15:26[0m | [1m检测结果已保存到数据库: 40[0m
+INFO:     127.0.0.1:5475 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'apps/lock_detector.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1651595]
+2025-09-21 17:16:41.413 | INFO     | apps.lock_detector:load_model:85 - 目标检测模型加载成功: models/lock_detector/weights/best.pt
+2025-09-21 17:16:41.414 | INFO     | apps.trainer:_create_dataset_config:62 - YOLO数据集配置文件已创建: datasets/lock_dataset_new/dataset.yaml
+[32m17:16:41[0m | [1m已注册命令: train[0m
+[32m17:16:41[0m | [1m已注册命令: dataset_stats[0m
+[32m17:16:41[0m | [1m已注册命令: export_model[0m
+[32m17:16:41[0m | [1m已注册命令: train[0m
+[32m17:16:41[0m | [1m已注册命令: dataset_stats[0m
+[32m17:16:41[0m | [1m已注册命令: export_model[0m
+INFO:     Started server process [1726093]
+INFO:     Waiting for application startup.
+[32m17:16:41[0m | [33m[1m未配置钉钉服务，部分功能将不可用[0m
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'apps/lock_detector.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1726093]
+2025-09-21 17:16:48.923 | INFO     | apps.lock_detector:load_model:85 - 目标检测模型加载成功: models/lock_detector/weights/best.pt
+2025-09-21 17:16:48.924 | INFO     | apps.trainer:_create_dataset_config:62 - YOLO数据集配置文件已创建: datasets/lock_dataset_new/dataset.yaml
+[32m17:16:48[0m | [1m已注册命令: train[0m
+[32m17:16:48[0m | [1m已注册命令: dataset_stats[0m
+[32m17:16:48[0m | [1m已注册命令: export_model[0m
+[32m17:16:48[0m | [1m已注册命令: train[0m
+[32m17:16:48[0m | [1m已注册命令: dataset_stats[0m
+[32m17:16:48[0m | [1m已注册命令: export_model[0m
+INFO:     Started server process [1727059]
+INFO:     Waiting for application startup.
+[32m17:16:48[0m | [33m[1m未配置钉钉服务，部分功能将不可用[0m
+INFO:     Application startup complete.
+[32m17:17:05[0m | [1m锁检测结果: 1 个锁, 1 个未锁定[0m
+[32m17:17:05[0m | [1m检测结果已保存到数据库: 41[0m
+INFO:     127.0.0.1:51788 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+[32m17:17:05[0m | [1m锁检测结果: 0 个锁, 0 个未锁定[0m
+[32m17:17:05[0m | [1m检测结果已保存到数据库: 42[0m
+INFO:     127.0.0.1:51792 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+[32m17:17:05[0m | [1m锁检测结果: 8 个锁, 8 个未锁定[0m
+[32m17:17:05[0m | [1m检测结果已保存到数据库: 43[0m
+INFO:     127.0.0.1:51798 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+[32m17:17:05[0m | [1m锁检测结果: 1 个锁, 0 个未锁定[0m
+[32m17:17:05[0m | [1m检测结果已保存到数据库: 44[0m
+INFO:     127.0.0.1:51802 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+[32m17:17:05[0m | [1m锁检测结果: 2 个锁, 2 个未锁定[0m
+[32m17:17:05[0m | [1m检测结果已保存到数据库: 45[0m
+INFO:     127.0.0.1:51816 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51818 - "GET /healthcheck HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51826 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51834 - "GET /api/v1/stats HTTP/1.1" 200 OK
+[32m17:17:11[0m | [1m锁检测结果: 1 个锁, 1 个未锁定[0m
+[32m17:17:11[0m | [1m检测结果已保存到数据库: 46[0m
+INFO:     127.0.0.1:51838 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+[32m17:17:20[0m | [1m锁检测结果: 8 个锁, 8 个未锁定[0m
+[32m17:17:20[0m | [1m检测结果已保存到数据库: 47[0m
+INFO:     127.0.0.1:53960 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53968 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:53968 - "GET /static/index.html HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53970 - "GET /static/css/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53982 - "GET /static/js/ui.js HTTP/1.1" 200 OK
+[32m17:17:30[0m | [1m锁检测结果: 8 个锁, 8 个未锁定[0m
+[32m17:17:30[0m | [1m检测结果已保存到数据库: 48[0m
+INFO:     127.0.0.1:53616 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14586 - "GET /static/index.html HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:14586 - "GET /static/css/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:13141 - "GET /static/js/ui.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:13141 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:13141 - "GET /api/v1/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:13141 - "GET /api/v1/history?limit=10&offset=0 HTTP/1.1" 200 OK
+[32m17:18:18[0m | [1m锁检测结果: 1 个锁, 1 个未锁定[0m
+[32m17:18:18[0m | [1m检测结果已保存到数据库: 49[0m
+INFO:     127.0.0.1:1547 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+[32m17:18:32[0m | [1m锁检测结果: 0 个锁, 0 个未锁定[0m
+[32m17:18:32[0m | [1m检测结果已保存到数据库: 50[0m
+INFO:     127.0.0.1:2619 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+[32m17:18:41[0m | [1m锁检测结果: 0 个锁, 0 个未锁定[0m
+[32m17:18:41[0m | [1m检测结果已保存到数据库: 51[0m
+INFO:     127.0.0.1:12970 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'test_model_inference.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1727059]
+2025-09-21 17:19:32.995 | INFO     | apps.lock_detector:load_model:85 - 目标检测模型加载成功: models/lock_detector/weights/best.pt
+2025-09-21 17:19:32.996 | INFO     | apps.trainer:_create_dataset_config:62 - YOLO数据集配置文件已创建: datasets/lock_dataset_new/dataset.yaml
+[32m17:19:33[0m | [1m已注册命令: train[0m
+[32m17:19:33[0m | [1m已注册命令: dataset_stats[0m
+[32m17:19:33[0m | [1m已注册命令: export_model[0m
+[32m17:19:33[0m | [1m已注册命令: train[0m
+[32m17:19:33[0m | [1m已注册命令: dataset_stats[0m
+[32m17:19:33[0m | [1m已注册命令: export_model[0m
+INFO:     Started server process [1770272]
+INFO:     Waiting for application startup.
+[32m17:19:33[0m | [33m[1m未配置钉钉服务，部分功能将不可用[0m
+INFO:     Application startup complete.
+[32m17:19:39[0m | [1m锁检测结果: 1 个锁, 1 个未锁定[0m
+[32m17:19:39[0m | [1m检测结果已保存到数据库: 52[0m
+INFO:     127.0.0.1:52802 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+[32m17:19:39[0m | [1m锁检测结果: 0 个锁, 0 个未锁定[0m
+[32m17:19:39[0m | [1m检测结果已保存到数据库: 53[0m
+INFO:     127.0.0.1:52814 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+[32m17:19:39[0m | [1m锁检测结果: 8 个锁, 8 个未锁定[0m
+[32m17:19:39[0m | [1m检测结果已保存到数据库: 54[0m
+INFO:     127.0.0.1:52826 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+[32m17:19:39[0m | [1m锁检测结果: 1 个锁, 0 个未锁定[0m
+[32m17:19:39[0m | [1m检测结果已保存到数据库: 55[0m
+INFO:     127.0.0.1:52832 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+[32m17:19:39[0m | [1m锁检测结果: 2 个锁, 2 个未锁定[0m
+[32m17:19:39[0m | [1m检测结果已保存到数据库: 56[0m
+INFO:     127.0.0.1:52846 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52206 - "GET /healthcheck HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52210 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52216 - "GET /api/v1/stats HTTP/1.1" 200 OK
+[32m17:19:45[0m | [1m锁检测结果: 1 个锁, 1 个未锁定[0m
+[32m17:19:45[0m | [1m检测结果已保存到数据库: 57[0m
+INFO:     127.0.0.1:52232 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+[32m17:19:47[0m | [1m锁检测结果: 8 个锁, 8 个未锁定[0m
+[32m17:19:47[0m | [1m检测结果已保存到数据库: 58[0m
+INFO:     127.0.0.1:52242 - "POST /api/v1/lock/detect HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52254 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:52254 - "GET /static/index.html HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52268 - "GET /static/css/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52278 - "GET /static/js/ui.js HTTP/1.1" 200 OK

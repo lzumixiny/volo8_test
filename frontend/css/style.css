@@ -702,3 +702,21 @@ body {
     font-weight: 600;
     color: #667eea;
 }
+
+.lock-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.lock-detail-positions {
+    font-size: 0.85rem;
+    color: #4a5568;
+    background: #f7fafc;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border-left: 3px solid #e2e8f0;
+    line-height: 1.4;
+}

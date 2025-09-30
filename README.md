@@ -32,6 +32,22 @@ source .venv/bin/activate
 将数据集按以下结构组织：
 
 ```
+
+数据集中包含的类别： 
+labels = [
+    "upper_locked",
+    "upper_unlocked",
+    "upper_nolock",
+    "lower_locked",
+    "lower_unlocked",
+    "lower_nolock",
+    "knife_unlocked",
+    "knife_locked",
+    "lid_loose",
+    "lid_tight"
+]
+
+
 datasets/lock_detech/
 ├── train/
 │   ├── locked/        # 锁定状态图片

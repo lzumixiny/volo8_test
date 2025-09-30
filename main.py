@@ -9,6 +9,8 @@ from fastapi import FastAPI, File, status, Request, BackgroundTasks
 from fastapi.exceptions import HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import RedirectResponse, StreamingResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 from loguru import logger
 from PIL import Image
@@ -90,6 +92,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# 挂载静态文件
+app.mount("/static", StaticFiles(directory="frontend"), name="static")
+
+# 模板设置
+templates = Jinja2Templates(directory="frontend")
+
 
 def save_openapi_json():
     """此函数用于将FastAPI应用程序的OpenAPI文档数据保存到JSON文件中。
@@ -104,7 +112,7 @@ def save_openapi_json():
 # 重定向
 @app.get("/", include_in_schema=False)
 async def redirect():
-    return RedirectResponse("/docs")
+    return RedirectResponse("/static/index.html")
 
 
 @app.get("/healthcheck", status_code=status.HTTP_200_OK)
@@ -243,7 +251,9 @@ async def detect_locks(file: bytes = File(...), user_id: str = ""):
         )
         
         # 生成可视化结果
-        result_image = detector.visualize_detection(input_image, detection_result)
+        output_path = "runs/detect/webout/output/image0.jpg"
+        image = Image.open(output_path)
+        # result_image = detector.visualize_detection(image, detection_result)
         
         return DetectionResponse(
             success=True,
@@ -251,7 +261,7 @@ async def detect_locks(file: bytes = File(...), user_id: str = ""):
             data={
                 "detection_id": detection_id,
                 "result": detection_result.to_dict(),
-                "image_base64": get_bytes_from_image(result_image).hex()
+                "image_base64": get_bytes_from_image(image).hex()
             }
         )
         
@@ -326,6 +336,11 @@ async def dingtalk_webhook(request: Request):
 command_manager.register_command(TrainCommand)
 command_manager.register_command(DatasetStatsCommand)
 command_manager.register_command(ExportModelCommand)
+
+# 启动Uvicorn服务器
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
 
 @app.get("/api/v1/stats", response_model=DetectionResponse)
 async def get_statistics():

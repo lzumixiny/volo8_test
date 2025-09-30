@@ -114,3 +114,295 @@ See https://pytorch.org/get-started/locally/ for up-to-date torch install instru
 2025-09-05 21:58:18.484 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 24
 2025-09-05 21:58:54.758 | INFO     | apps.lock_detector:detect_locks:131 - 锁分类结果: 1 个锁, 0 个未锁定
 2025-09-05 21:58:54.788 | INFO     | apps.lock_detector:save_detection_result:189 - 检测结果已保存到数据库: 25
+2025-09-05 23:41:47.051 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-05 23:41:47.052 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-05 23:41:47.052 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-05 23:41:47.054 | WARNING  | main:startup_event:76 - 未配置钉钉服务，部分功能将不可用
+2025-09-05 23:42:39.501 | INFO     | apps.lock_detector:detect_locks:132 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-05 23:42:39.507 | INFO     | apps.lock_detector:save_detection_result:276 - 检测结果已保存到数据库: 26
+2025-09-05 23:43:04.410 | INFO     | apps.lock_detector:detect_locks:132 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-05 23:43:04.415 | INFO     | apps.lock_detector:save_detection_result:276 - 检测结果已保存到数据库: 27
+2025-09-05 23:47:59.534 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-05 23:47:59.535 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-05 23:47:59.535 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-05 23:47:59.537 | WARNING  | main:startup_event:76 - 未配置钉钉服务，部分功能将不可用
+2025-09-05 23:52:46.715 | INFO     | apps.lock_detector:detect_locks:132 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-05 23:52:46.723 | INFO     | apps.lock_detector:save_detection_result:276 - 检测结果已保存到数据库: 28
+2025-09-05 23:53:03.486 | INFO     | apps.lock_detector:detect_locks:132 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-05 23:53:03.491 | INFO     | apps.lock_detector:save_detection_result:276 - 检测结果已保存到数据库: 29
+2025-09-05 23:53:11.910 | INFO     | apps.lock_detector:detect_locks:132 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-05 23:53:11.917 | INFO     | apps.lock_detector:save_detection_result:276 - 检测结果已保存到数据库: 30
+2025-09-05 23:53:28.461 | INFO     | apps.lock_detector:detect_locks:132 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-05 23:53:28.466 | INFO     | apps.lock_detector:save_detection_result:276 - 检测结果已保存到数据库: 31
+2025-09-05 23:53:49.295 | INFO     | apps.lock_detector:detect_locks:132 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-05 23:53:49.299 | INFO     | apps.lock_detector:save_detection_result:276 - 检测结果已保存到数据库: 32
+2025-09-05 23:54:23.275 | INFO     | apps.lock_detector:detect_locks:132 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-05 23:54:23.279 | INFO     | apps.lock_detector:save_detection_result:276 - 检测结果已保存到数据库: 33
+2025-09-05 23:56:13.209 | INFO     | apps.lock_detector:detect_locks:132 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-05 23:56:13.214 | INFO     | apps.lock_detector:save_detection_result:276 - 检测结果已保存到数据库: 34
+2025-09-05 23:56:21.245 | INFO     | apps.lock_detector:detect_locks:132 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-05 23:56:21.250 | INFO     | apps.lock_detector:save_detection_result:276 - 检测结果已保存到数据库: 35
+2025-09-21 17:07:35.212 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-21 17:07:35.212 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-21 17:07:35.213 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-21 17:07:54.667 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-21 17:07:54.667 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-21 17:07:54.668 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-21 17:09:00.991 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-21 17:09:00.991 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-21 17:09:00.991 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-21 17:09:03.389 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-21 17:09:03.389 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-21 17:09:03.389 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-21 17:09:03.436 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-21 17:09:03.436 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-21 17:09:03.437 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-21 17:09:03.438 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-21 17:11:46.103 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-21 17:11:46.104 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-21 17:11:46.104 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-21 17:11:48.472 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-21 17:11:48.472 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-21 17:11:48.473 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-21 17:11:48.507 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-21 17:11:48.508 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-21 17:11:48.508 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-21 17:11:48.510 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-21 17:11:53.599 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 1 个锁, 0 个未锁定
+2025-09-21 17:11:53.611 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 36
+2025-09-21 17:14:28.835 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-21 17:14:28.840 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 37
+2025-09-21 17:14:53.600 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-21 17:14:53.605 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 38
+2025-09-21 17:15:09.084 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 1 个锁, 0 个未锁定
+2025-09-21 17:15:09.117 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 39
+2025-09-21 17:15:26.338 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-21 17:15:26.374 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 40
+2025-09-21 17:16:41.431 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-21 17:16:41.431 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-21 17:16:41.432 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-21 17:16:41.481 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-21 17:16:41.481 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-21 17:16:41.482 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-21 17:16:41.483 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-21 17:16:48.938 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-21 17:16:48.938 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-21 17:16:48.938 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-21 17:16:48.984 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-21 17:16:48.984 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-21 17:16:48.985 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-21 17:16:48.987 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-21 17:17:05.294 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 1 个锁, 1 个未锁定
+2025-09-21 17:17:05.305 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 41
+2025-09-21 17:17:05.421 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-21 17:17:05.427 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 42
+2025-09-21 17:17:05.489 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 8 个锁, 8 个未锁定
+2025-09-21 17:17:05.499 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 43
+2025-09-21 17:17:05.583 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 1 个锁, 0 个未锁定
+2025-09-21 17:17:05.591 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 44
+2025-09-21 17:17:05.653 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 2 个锁, 2 个未锁定
+2025-09-21 17:17:05.662 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 45
+2025-09-21 17:17:11.129 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 1 个锁, 1 个未锁定
+2025-09-21 17:17:11.137 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 46
+2025-09-21 17:17:20.759 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 8 个锁, 8 个未锁定
+2025-09-21 17:17:20.768 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 47
+2025-09-21 17:17:30.759 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 8 个锁, 8 个未锁定
+2025-09-21 17:17:30.768 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 48
+2025-09-21 17:18:18.367 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 1 个锁, 1 个未锁定
+2025-09-21 17:18:18.375 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 49
+2025-09-21 17:18:32.496 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-21 17:18:32.527 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 50
+2025-09-21 17:18:41.861 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-21 17:18:41.867 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 51
+2025-09-21 17:19:33.010 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-21 17:19:33.010 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-21 17:19:33.010 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-21 17:19:33.048 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-21 17:19:33.048 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-21 17:19:33.048 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-21 17:19:33.050 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-21 17:19:39.117 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 1 个锁, 1 个未锁定
+2025-09-21 17:19:39.126 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 52
+2025-09-21 17:19:39.244 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-21 17:19:39.250 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 53
+2025-09-21 17:19:39.308 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 8 个锁, 8 个未锁定
+2025-09-21 17:19:39.316 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 54
+2025-09-21 17:19:39.396 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 1 个锁, 0 个未锁定
+2025-09-21 17:19:39.403 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 55
+2025-09-21 17:19:39.464 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 2 个锁, 2 个未锁定
+2025-09-21 17:19:39.472 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 56
+2025-09-21 17:19:45.353 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 1 个锁, 1 个未锁定
+2025-09-21 17:19:45.361 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 57
+2025-09-21 17:19:47.732 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 8 个锁, 8 个未锁定
+2025-09-21 17:19:47.741 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 58
+2025-09-28 10:53:36.302 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-28 10:53:36.302 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-28 10:53:36.303 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-28 10:53:36.306 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-28 10:54:01.997 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 2 个锁, 2 个未锁定
+2025-09-28 10:54:02.007 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 59
+2025-09-28 10:55:51.556 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-28 10:55:51.561 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 60
+2025-09-28 10:56:14.452 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-28 10:56:14.493 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 61
+2025-09-30 14:57:44.252 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 14:57:44.254 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 14:57:44.254 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 14:57:44.256 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 14:57:55.508 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 1 个锁, 1 个未锁定
+2025-09-30 14:57:55.557 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 62
+2025-09-30 14:58:32.289 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-30 14:58:32.318 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 63
+2025-09-30 14:58:45.556 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-30 14:58:45.585 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 64
+2025-09-30 14:58:53.394 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 1 个锁, 0 个未锁定
+2025-09-30 14:58:53.402 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 65
+2025-09-30 14:59:35.580 | INFO     | apps.lock_detector:detect_locks:133 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-30 14:59:35.609 | INFO     | apps.lock_detector:save_detection_result:277 - 检测结果已保存到数据库: 66
+2025-09-30 15:16:21.770 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 15:16:21.771 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 15:16:21.772 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 15:16:21.774 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 15:20:58.388 | INFO     | apps.lock_detector:detect_locks:135 - 锁检测结果: 3 个锁, 3 个未锁定
+2025-09-30 15:20:58.397 | INFO     | apps.lock_detector:save_detection_result:325 - 检测结果已保存到数据库: 67
+2025-09-30 15:21:13.023 | INFO     | apps.lock_detector:detect_locks:135 - 锁检测结果: 3 个锁, 2 个未锁定
+2025-09-30 15:21:13.031 | INFO     | apps.lock_detector:save_detection_result:325 - 检测结果已保存到数据库: 68
+2025-09-30 15:21:38.228 | INFO     | apps.lock_detector:detect_locks:135 - 锁检测结果: 2 个锁, 2 个未锁定
+2025-09-30 15:21:38.260 | INFO     | apps.lock_detector:save_detection_result:325 - 检测结果已保存到数据库: 69
+2025-09-30 15:21:44.216 | INFO     | apps.lock_detector:detect_locks:135 - 锁检测结果: 2 个锁, 2 个未锁定
+2025-09-30 15:21:44.248 | INFO     | apps.lock_detector:save_detection_result:325 - 检测结果已保存到数据库: 70
+2025-09-30 15:48:44.848 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 15:48:44.849 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 15:48:44.849 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 15:48:44.853 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 15:48:56.879 | INFO     | apps.lock_detector:detect_locks:135 - 锁检测结果: 3 个锁, 3 个未锁定
+2025-09-30 15:48:56.889 | INFO     | apps.lock_detector:save_detection_result:325 - 检测结果已保存到数据库: 71
+2025-09-30 15:53:59.046 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 15:53:59.047 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 15:53:59.047 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 15:53:59.049 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 15:54:07.422 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 3 个锁, 2 个未锁定
+2025-09-30 15:54:07.432 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 72
+2025-09-30 15:54:37.486 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 3 个锁, 2 个未锁定
+2025-09-30 15:54:37.494 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 73
+2025-09-30 15:55:12.777 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 2 个锁, 1 个未锁定
+2025-09-30 15:55:12.817 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 74
+2025-09-30 15:57:02.765 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 6 个锁, 3 个未锁定
+2025-09-30 15:57:02.774 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 75
+2025-09-30 15:57:46.232 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 15:57:46.233 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 15:57:46.233 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 15:57:46.235 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 15:57:44.847 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 3 个锁, 2 个未锁定
+2025-09-30 15:57:44.857 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 76
+2025-09-30 15:58:10.375 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 15:58:10.376 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 15:58:10.376 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 15:58:10.379 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 15:58:18.185 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 2 个锁, 1 个未锁定
+2025-09-30 15:58:18.271 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 77
+2025-09-30 15:58:42.847 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 6 个锁, 3 个未锁定
+2025-09-30 15:58:42.855 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 78
+2025-09-30 15:59:27.992 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 2 个锁, 1 个未锁定
+2025-09-30 15:59:28.029 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 79
+2025-09-30 15:59:34.014 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 2 个锁, 1 个未锁定
+2025-09-30 15:59:34.071 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 80
+2025-09-30 15:59:44.495 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 2 个锁, 1 个未锁定
+2025-09-30 15:59:44.504 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 81
+2025-09-30 16:00:03.995 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 2 个锁, 1 个未锁定
+2025-09-30 16:00:04.034 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 82
+2025-09-30 16:11:45.220 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 16:11:45.221 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 16:11:45.221 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 16:11:45.223 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 16:11:57.557 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 2 个锁, 1 个未锁定
+2025-09-30 16:11:57.612 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 83
+2025-09-30 16:12:17.404 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 2 个锁, 1 个未锁定
+2025-09-30 16:12:17.438 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 84
+2025-09-30 16:12:37.320 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 2 个锁, 1 个未锁定
+2025-09-30 16:12:37.352 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 85
+2025-09-30 16:12:59.032 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 3 个锁, 2 个未锁定
+2025-09-30 16:12:59.041 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 86
+2025-09-30 16:13:22.751 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 2 个锁, 1 个未锁定
+2025-09-30 16:13:22.786 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 87
+2025-09-30 16:13:41.447 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 4 个锁, 1 个未锁定
+2025-09-30 16:13:41.456 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 88
+2025-09-30 16:39:38.801 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 16:39:38.802 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 16:39:38.802 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 16:39:38.805 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 16:40:12.646 | INFO     | apps.lock_detector:detect_locks:144 - 锁检测结果: 4 个锁, 1 个未锁定
+2025-09-30 16:40:12.660 | INFO     | apps.lock_detector:save_detection_result:334 - 检测结果已保存到数据库: 89
+2025-09-30 16:40:42.162 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 16:40:42.163 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 16:40:42.163 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 16:40:42.165 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 16:47:18.265 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 16:47:18.266 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 16:47:18.266 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 16:47:18.270 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 16:47:27.784 | INFO     | apps.lock_detector:detect_locks:144 - 锁检测结果: 4 个锁, 1 个未锁定
+2025-09-30 16:47:27.794 | INFO     | apps.lock_detector:save_detection_result:334 - 检测结果已保存到数据库: 90
+2025-09-30 16:47:27.794 | ERROR    | main:detect_locks:269 - 锁检测失败: name 'img_path' is not defined
+2025-09-30 16:49:42.392 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 16:49:42.392 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 16:49:42.393 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 16:49:42.394 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 16:49:52.305 | INFO     | apps.lock_detector:detect_locks:144 - 锁检测结果: 4 个锁, 1 个未锁定
+2025-09-30 16:49:52.319 | INFO     | apps.lock_detector:save_detection_result:334 - 检测结果已保存到数据库: 91
+2025-09-30 16:50:37.881 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 16:50:37.882 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 16:50:37.882 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 16:50:37.885 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 16:50:34.900 | INFO     | apps.lock_detector:detect_locks:144 - 锁检测结果: 4 个锁, 1 个未锁定
+2025-09-30 16:50:34.915 | INFO     | apps.lock_detector:save_detection_result:334 - 检测结果已保存到数据库: 92
+2025-09-30 16:56:35.672 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 16:56:35.672 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 16:56:35.673 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 16:56:35.676 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 16:56:42.981 | INFO     | apps.lock_detector:detect_locks:146 - 锁检测结果: 4 个锁, 1 个未锁定
+2025-09-30 16:56:42.994 | INFO     | apps.lock_detector:save_detection_result:336 - 检测结果已保存到数据库: 93
+2025-09-30 16:57:00.253 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 16:57:00.254 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 16:57:00.254 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 16:57:00.256 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 16:57:06.486 | INFO     | apps.lock_detector:detect_locks:146 - 锁检测结果: 4 个锁, 1 个未锁定
+2025-09-30 16:57:06.498 | INFO     | apps.lock_detector:save_detection_result:336 - 检测结果已保存到数据库: 94
+2025-09-30 16:58:44.894 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 16:58:44.895 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 16:58:44.895 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 16:58:44.897 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 16:58:53.906 | INFO     | apps.lock_detector:detect_locks:147 - 锁检测结果: 3 个锁, 0 个未锁定
+2025-09-30 16:58:53.919 | INFO     | apps.lock_detector:save_detection_result:337 - 检测结果已保存到数据库: 95
+2025-09-30 16:58:59.732 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 16:58:59.733 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 16:58:59.733 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 16:58:59.736 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 16:59:06.145 | INFO     | apps.lock_detector:detect_locks:147 - 锁检测结果: 4 个锁, 1 个未锁定
+2025-09-30 16:59:06.160 | INFO     | apps.lock_detector:save_detection_result:337 - 检测结果已保存到数据库: 96
+2025-09-30 17:02:26.844 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 17:02:26.844 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 17:02:26.845 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 17:02:26.847 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 17:02:30.730 | INFO     | apps.lock_detector:detect_locks:147 - 锁检测结果: 4 个锁, 1 个未锁定
+2025-09-30 17:02:30.740 | INFO     | apps.lock_detector:save_detection_result:337 - 检测结果已保存到数据库: 97
+2025-09-30 17:09:50.780 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 17:09:50.781 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 17:09:50.781 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 17:09:50.783 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 17:09:56.740 | INFO     | apps.lock_detector:detect_locks:145 - 锁检测结果: 4 个锁, 0 个未锁定
+2025-09-30 17:09:56.751 | INFO     | apps.lock_detector:save_detection_result:335 - 检测结果已保存到数据库: 98
+2025-09-30 17:17:42.525 | INFO     | apps.commands:register_command:57 - 已注册命令: train
+2025-09-30 17:17:42.527 | INFO     | apps.commands:register_command:57 - 已注册命令: dataset_stats
+2025-09-30 17:17:42.527 | INFO     | apps.commands:register_command:57 - 已注册命令: export_model
+2025-09-30 17:17:42.530 | WARNING  | main:startup_event:78 - 未配置钉钉服务，部分功能将不可用
+2025-09-30 17:17:52.128 | INFO     | apps.lock_detector:detect_locks:157 - 锁检测结果: 4 个锁, 0 个未锁定
+2025-09-30 17:17:52.140 | INFO     | apps.lock_detector:save_detection_result:347 - 检测结果已保存到数据库: 99
+2025-09-30 17:18:12.774 | INFO     | apps.lock_detector:detect_locks:157 - 锁检测结果: 0 个锁, 0 个未锁定
+2025-09-30 17:18:12.809 | INFO     | apps.lock_detector:save_detection_result:347 - 检测结果已保存到数据库: 100
+2025-09-30 17:18:22.848 | INFO     | apps.lock_detector:detect_locks:157 - 锁检测结果: 2 个锁, 2 个未锁定
+2025-09-30 17:18:22.882 | INFO     | apps.lock_detector:save_detection_result:347 - 检测结果已保存到数据库: 101
+2025-09-30 17:18:39.464 | INFO     | apps.lock_detector:detect_locks:157 - 锁检测结果: 4 个锁, 1 个未锁定
+2025-09-30 17:18:39.474 | INFO     | apps.lock_detector:save_detection_result:347 - 检测结果已保存到数据库: 102
+2025-09-30 17:19:35.400 | INFO     | apps.lock_detector:detect_locks:157 - 锁检测结果: 4 个锁, 0 个未锁定
+2025-09-30 17:19:35.409 | INFO     | apps.lock_detector:save_detection_result:347 - 检测结果已保存到数据库: 103

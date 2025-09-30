@@ -3,9 +3,11 @@
 """
 
 from pathlib import Path
+
+from loguru import logger
+
 from .commands import BaseCommand
 from .trainer import trainer
-from loguru import logger
 
 
 class TrainCommand(BaseCommand):
@@ -19,49 +21,32 @@ class TrainCommand(BaseCommand):
         self.parser.add_argument(
             "--model-name",
             type=str,
-            default="lock_classifier",
-            help="模型名称 (默认: lock_classifier)"
+            default="lock_detechtor_final",
+            help="模型名称 (默认: lock_detechtor_final)",
         )
         self.parser.add_argument(
-            "--epochs",
-            type=int,
-            default=100,
-            help="训练轮数 (默认: 100)"
+            "--epochs", type=int, default=200, help="训练轮数 (默认: 100)"
         )
         self.parser.add_argument(
-            "--batch-size",
-            type=int,
-            default=16,
-            help="批次大小 (默认: 16)"
+            "--batch-size", type=int, default=16, help="批次大小 (默认: 16)"
         )
         self.parser.add_argument(
-            "--img-size",
-            type=int,
-            default=224,
-            help="图片尺寸 (默认: 224)"
+            "--img-size", type=int, default=640, help="图片尺寸 (默认: 640)"
         )
         self.parser.add_argument(
-            "--learning-rate",
-            type=float,
-            default=0.001,
-            help="学习率 (默认: 0.001)"
+            "--learning-rate", type=float, default=0.001, help="学习率 (默认: 0.001)"
         )
         self.parser.add_argument(
-            "--device",
-            type=str,
-            default="0",
-            help="训练设备 (默认: 0)"
+            "--device", type=str, default="0", help="训练设备 (默认: 0)"
         )
         self.parser.add_argument(
             "--dataset-path",
             type=str,
-            default="datasets/lock_detech",
-            help="数据集路径 (默认: datasets/lock_detech)"
+            default="datasets/dataset_end/datasets",
+            help="数据集路径 (默认: datasets/dataset_end/datasets)",
         )
         self.parser.add_argument(
-            "--validate",
-            action="store_true",
-            help="训练完成后验证模型"
+            "--validate", action="store_true", help="训练完成后验证模型"
         )
 
     def handle(self, **options):
@@ -83,13 +68,16 @@ class TrainCommand(BaseCommand):
             batch_size=options["batch_size"],
             img_size=options["img_size"],
             learning_rate=options["learning_rate"],
-            device=options["device"]
+            device=options["device"],
         )
 
         if result["success"]:
             logger.info("训练完成!")
             logger.info(f"模型路径: {result['model_path']}")
-            logger.info(f"准确率: {result['accuracy']:.4f}")
+            logger.info(f"mAP50: {result['map50']:.4f}")
+            logger.info(f"mAP50-95: {result['map50_95']:.4f}")
+            logger.info(f"精确率: {result['precision']:.4f}")
+            logger.info(f"召回率: {result['recall']:.4f}")
             logger.info(f"训练时间: {result['training_time']:.2f}秒")
 
             # 如果需要验证
@@ -104,14 +92,14 @@ class TrainCommand(BaseCommand):
     # 数据准备方法已移除，现在直接使用datasets文件夹中的数据
 
     def _validate_model(self, model_path: str):
-        """验证分类模型"""
-        logger.info("验证分类模型性能...")
+        """验证目标检测模型"""
+        logger.info("验证目标检测模型性能...")
         validation_result = trainer.validate_model(model_path)
 
         if validation_result["success"]:
             logger.info("验证结果:")
-            logger.info(f"  准确率(Top-1): {validation_result['accuracy']:.4f}")
-            logger.info(f"  准确率(Top-5): {validation_result['accuracy_top5']:.4f}")
+            logger.info(f"  mAP50: {validation_result['map50']:.4f}")
+            logger.info(f"  mAP50-95: {validation_result['map50_95']:.4f}")
             logger.info(f"  精确率: {validation_result['precision']:.4f}")
             logger.info(f"  召回率: {validation_result['recall']:.4f}")
             logger.info(f"  F1分数: {validation_result['f1_score']:.4f}")
@@ -135,6 +123,7 @@ class DatasetStatsCommand(BaseCommand):
             logger.info(f"  {split}:")
             logger.info(f"    总图片数: {data['total_images']}")
             logger.info(f"    总标注数: {data['total_labels']}")
+            logger.info(f"    总标注对象数: {data['total_annotations']}")
             logger.info(f"    类别分布: {data['class_distribution']}")
             logger.info(f"    路径: {data['path']}")
 
@@ -149,17 +138,13 @@ class ExportModelCommand(BaseCommand):
 
     def add_arguments(self):
         """添加命令行参数"""
-        self.parser.add_argument(
-            "model_path",
-            type=str,
-            help="模型文件路径"
-        )
+        self.parser.add_argument("model_path", type=str, help="模型文件路径")
         self.parser.add_argument(
             "--format",
             type=str,
             default="onnx",
             choices=["onnx", "torchscript", "coreml", "tensorflow"],
-            help="导出格式 (默认: onnx)"
+            help="导出格式 (默认: onnx)",
         )
 
     def handle(self, **options):

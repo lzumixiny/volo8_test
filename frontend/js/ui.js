@@ -190,17 +190,28 @@ class LockDetectionUI {
             const isLocked = lock.is_locked;
             const statusClass = isLocked ? 'locked' : 'unlocked';
             const statusText = isLocked ? '已锁定' : '未锁定';
-            
+
             lockItem.className = `lock-detail-item ${statusClass}`;
-            
+
+            // 格式化边界框信息
+            const bbox = lock.bbox || {};
+            const positionInfo = bbox && Object.keys(bbox).length > 0 ?
+                `位置: (${Math.round(bbox.xmin || 0)}, ${Math.round(bbox.ymin || 0)}) - (${Math.round(bbox.xmax || 0)}, ${Math.round(bbox.ymax || 0)})<br>大小: ${Math.round(lock.width || 0)} × ${Math.round(lock.height || 0)}` :
+                '位置信息不可用';
+
             lockItem.innerHTML = `
-                <div class="lock-detail-info">
-                    <div class="lock-detail-type">${lock.lock_type || '未知类型'}</div>
-                    <div class="lock-detail-status">${statusText}</div>
+                <div class="lock-detail-header">
+                    <div class="lock-detail-info">
+                        <div class="lock-detail-type">锁 #${index + 1} - ${lock.lock_type || '未知类型'}</div>
+                        <div class="lock-detail-status">${statusText}</div>
+                    </div>
+                    <div class="lock-detail-confidence">${(lock.confidence * 100).toFixed(1)}%</div>
                 </div>
-                <div class="lock-detail-confidence">${(lock.confidence * 100).toFixed(1)}%</div>
+                <div class="lock-detail-positions">
+                    ${positionInfo}
+                </div>
             `;
-            
+
             lockDetails.appendChild(lockItem);
         });
     }
